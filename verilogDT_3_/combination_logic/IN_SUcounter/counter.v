@@ -49,6 +49,7 @@ always @(posedge clk or negedge rst_n)
     count_value <= new_cntr_preset_value;
             else if(pause_counting)
     count_value <= count_value;
+    
             else count_value <= count_value ;
         end
                                                       
